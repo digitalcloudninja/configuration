@@ -45,7 +45,7 @@ jobs:
         run: ./gradlew publish
         env:
           USERNAME: ${{ github.actor }}
-          TOKEN: ${{ secrets.PKG_TOKEN }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Container Registry Authentication
         uses: docker/login-action@v3.0.0
