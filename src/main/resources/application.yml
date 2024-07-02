@@ -2,13 +2,13 @@ server:
     port: 8888
 spring:
     application:
-        name: configuration-service
+        name: configuration
     cloud:
         config:
             server:
                 bootstrap: true
                 git:
-                    uri: git@github.com:digitalcloudninja/application-default-config.git
+                    uri: git@github.com:digitalcloudninja/sample-application.git
                     default-label: master
         loadbalancer:
             enabled: false
